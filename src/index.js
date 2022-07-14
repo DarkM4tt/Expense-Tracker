@@ -1,3 +1,5 @@
+import React from 'react'
+
 //Holds the code that gets executed initially when we npm start
 import ReactDOM from 'react-dom/client'
 
