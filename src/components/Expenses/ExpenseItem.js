@@ -8,13 +8,15 @@ import Card from '../UI/Card'
 //props receive data in object form where we can use its values using .
 const ExpenseItem = (props) => {
   return (
-    <Card className="expense-item">
-      <ExpenseDate date={props.date} />
-      <div className="expense-item__description">
-        <h2>{props.title}</h2>
-        <div className="expense-item__price">₹ {props.amount}</div>
-      </div>
-    </Card>
+    <li>
+      <Card className="expense-item">
+        <ExpenseDate date={props.date} />
+        <div className="expense-item__description">
+          <h2>{props.title}</h2>
+          <div className="expense-item__price">₹ {props.amount}</div>
+        </div>
+      </Card>
+    </li>
     //No paranthesis in clickHandler because javascript will execute it while compiling.
   )
 }
